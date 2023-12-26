@@ -17,7 +17,7 @@ ARG RUN_UID=0
 ARG RUN_GID=0
 
 COPY . /tmp/motioneye
-ADD https://github.com/Motion-Project/motion/releases/tag/release-4.6.0/buster_motion_4.6.0-1_amd64.deb ./motion.deb
+ADD https://github.com/Motion-Project/motion/releases/tag/release-4.6.0/buster_motion_4.6.0-1_arm64.deb ./motion.deb
 
 RUN echo "deb http://snapshot.debian.org/archive/debian/$(date +%Y%m%d) buster contrib non-free" >>/etc/apt/sources.list && \
 apt-get update && \
